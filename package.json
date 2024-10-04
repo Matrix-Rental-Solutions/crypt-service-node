@@ -1,82 +1,46 @@
 {
-  "_args": [
-    [
-      "@devslane/crypt-service-node@1.1.0",
-      "/home/ubuntu/app/matrix-be"
-    ]
-  ],
-  "_from": "@devslane/crypt-service-node@1.1.0",
-  "_id": "@devslane/crypt-service-node@1.1.0",
-  "_inBundle": false,
-  "_integrity": "sha512-T2qwpuYtZip0IegaVI28gxNN18ToLV0vX0GSlIlYzgtRFH+T2Eak5Jad0gWKa6YuC35C2mKtqAj8/xuiwQOCdQ==",
-  "_location": "/@devslane/crypt-service-node",
-  "_phantomChildren": {
-    "abbrev": "1.1.1",
-    "detect-libc": "1.0.3",
-    "glob": "7.1.7",
-    "ignore-walk": "3.0.4",
-    "minimist": "1.2.5",
-    "needle": "2.9.1",
-    "npm-bundled": "1.1.2",
-    "npm-normalize-package-bin": "1.0.1",
-    "npmlog": "4.1.2",
-    "osenv": "0.1.5",
-    "rc": "1.2.8",
-    "safe-buffer": "5.2.1"
-  },
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "@devslane/crypt-service-node@1.1.0",
-    "name": "@devslane/crypt-service-node",
-    "escapedName": "@devslane%2fcrypt-service-node",
-    "scope": "@devslane",
-    "rawSpec": "1.1.0",
-    "saveSpec": null,
-    "fetchSpec": "1.1.0"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.devslane.com/@devslane%2fcrypt-service-node/-/crypt-service-node-1.1.0.tgz",
-  "_spec": "1.1.0",
-  "_where": "/home/ubuntu/app/matrix-be",
+  "name": "@devslane/crypt-service-node",
+  "version": "1.1.0",
+  "description": "Crypt Service for node applications",
+  "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "name": "Piyush Mishra"
   },
-  "dependencies": {
-    "bcrypt": "^3.0.5"
-  },
-  "description": "Crypt Service for node applications",
-  "devDependencies": {
-    "@types/bcrypt": "^3.0.0",
-    "@types/jest": "^24.0.11",
-    "jest": "^24.5.0",
-    "ts-jest": "^24.0.0",
-    "tslint": "^5.13.0",
-    "typedoc": "^0.14.2",
-    "typescript": "^3.2.2"
-  },
-  "directories": {
-    "lib": "lib",
-    "doc": "docs",
-    "test": "test"
-  },
+  "license": "MIT",
   "keywords": [
     "node",
     "redis",
     "service",
     "helper"
   ],
-  "license": "MIT",
-  "main": "index.js",
-  "name": "@devslane/crypt-service-node",
   "scripts": {
+    "build": "npm run build-ts && npm run lint",
+    "build-ts": "tsc",
+    "prepare": "npm run build && npm run test",
     "docs": "typedoc --out docs lib",
     "test": "jest --coverage",
     "test:jest": "jest",
-    "tslint": "tslint -c tslint.json -p tsconfig.json"
+    "lint": "eslint ."
   },
-  "types": "index.d.ts",
-  "version": "1.1.0"
+  "dependencies": {
+    "bcrypt": "^5.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/eslint__js": "^8.42.3",
+    "@types/jest": "^24.0.11",
+    "eslint": "^9.12.0",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.9.10",
+    "typescript-eslint": "^8.8.0"
+  },
+  "directories": {
+    "lib": "lib",
+    "doc": "docs",
+    "test": "test"
+  }
 }
