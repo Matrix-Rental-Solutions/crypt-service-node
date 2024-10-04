@@ -2,8 +2,8 @@
   "name": "@devslane/crypt-service-node",
   "version": "1.1.0",
   "description": "Crypt Service for node applications",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": {
     "name": "Piyush Mishra"
   },
@@ -36,5 +36,8 @@
   "directories": {
     "lib": "lib",
     "doc": "docs"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
