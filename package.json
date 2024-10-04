@@ -36,8 +36,5 @@
   "directories": {
     "lib": "lib",
     "doc": "docs"
-  },
-  "files": [
-    "lib/**/*"
-  ]
+  }
 }
