@@ -4,7 +4,7 @@
     "module": "commonjs", // CommonJS modules for Node.js compatibility
     "declaration": true, // Generate .d.ts files for type declarations
     "declarationDir": "./dist/types", // Store declaration files separately
-    "outDir": "./lib", // Output directory for compiled files
+    "outDir": "./dist", // Output directory for compiled files
     "rootDir": "./src", // Root directory of the TypeScript source files
     "strict": true, // Enable all strict type-checking options
     "esModuleInterop": true, // Enables compatibility with ES modules
