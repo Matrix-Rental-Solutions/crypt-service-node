@@ -72,10 +72,7 @@
   "main": "index.js",
   "name": "@devslane/crypt-service-node",
   "scripts": {
-    "build": "npm run build-ts && npm run tslint",
-    "build-ts": "tsc",
     "docs": "typedoc --out docs lib",
-    "prepare": "npm run build && npm run test",
     "test": "jest --coverage",
     "test:jest": "jest",
     "tslint": "tslint -c tslint.json -p tsconfig.json"
