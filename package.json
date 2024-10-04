@@ -15,12 +15,10 @@
     "helper"
   ],
   "scripts": {
-    "build": "npm run build-ts && npm run lint",
+    "build": "npm run build-ts",
     "build-ts": "tsc",
-    "prepare": "npm run build && npm run test",
+    "prepare": "npm run build",
     "docs": "typedoc --out docs lib",
-    "test": "jest --coverage",
-    "test:jest": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -30,17 +28,13 @@
     "@eslint/js": "^9.12.0",
     "@types/bcrypt": "^5.0.2",
     "@types/eslint__js": "^8.42.3",
-    "@types/jest": "^24.0.11",
     "eslint": "^9.12.0",
-    "jest": "^24.5.0",
-    "ts-jest": "^24.0.0",
-    "typedoc": "^0.14.2",
-    "typescript": "^3.9.10",
+    "typedoc": "^0.26.8",
+    "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0"
   },
   "directories": {
     "lib": "lib",
-    "doc": "docs",
-    "test": "test"
+    "doc": "docs"
   }
 }

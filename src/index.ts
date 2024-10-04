@@ -1,5 +1,3 @@
-// Services
 export { CryptService } from "./lib/crypt.service";
-
-// Extras
 export { CryptAlg } from "./lib/crypt.extras";
+export { CryptOptions } from "./lib/crypt.extras";
