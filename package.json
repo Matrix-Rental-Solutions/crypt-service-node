@@ -1,11 +1,11 @@
 {
   "name": "@devslane/crypt-service-node",
-  "version": "1.1.0",
-  "description": "Crypt Service for node applications",
+  "version": "2.0.0",
+  "description": "Rebuilt Crypt Service for node applications",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": {
-    "name": "Piyush Mishra"
+    "name": "Andrew Sidhu"
   },
   "license": "MIT",
   "keywords": [
