@@ -1,9 +1,7 @@
 {
   "name": "@devslane/crypt-service-node",
   "version": "2.0.0",
-  "description": "Rebuilt Crypt Service for node applications",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "description": "Reimplementation of devslane Crypt Service for node applications",
   "author": {
     "name": "Andrew Sidhu"
   },
@@ -14,10 +12,11 @@
     "service",
     "helper"
   ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "prepare": "tsc",
-    "docs": "typedoc --out docs lib",
     "lint": "eslint ."
   },
   "dependencies": {
@@ -26,9 +25,7 @@
   "devDependencies": {
     "@eslint/js": "^9.12.0",
     "@types/bcrypt": "^5.0.2",
-    "@types/eslint__js": "^8.42.3",
     "eslint": "^9.12.0",
-    "typedoc": "^0.26.8",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0"
   }
