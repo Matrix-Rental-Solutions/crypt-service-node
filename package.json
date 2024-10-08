@@ -2,8 +2,8 @@
   "name": "@devslane/crypt-service-node",
   "version": "2.0.0",
   "description": "Rebuilt Crypt Service for node applications",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "author": {
     "name": "Andrew Sidhu"
   },
@@ -32,9 +32,5 @@
     "typedoc": "^0.26.8",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.8.0"
-  },
-  "directories": {
-    "lib": "lib",
-    "doc": "docs"
   }
 }
