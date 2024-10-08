@@ -15,9 +15,8 @@
     "helper"
   ],
   "scripts": {
-    "build": "npm run build-ts",
-    "build-ts": "tsc",
-    "prepare": "npm run build",
+    "build": "tsc",
+    "prepare": "tsc",
     "docs": "typedoc --out docs lib",
     "lint": "eslint ."
   },
